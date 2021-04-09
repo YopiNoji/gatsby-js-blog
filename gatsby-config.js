@@ -6,7 +6,7 @@ module.exports = {
     image: `/Yopinoji.png`,
     author: `yopinoji`,
     email: `yopinoji@gmail.com`,
-    twitterId: `yopinoji`,
+    twitterId: ``,
     githubId: `YopiNoji`,
     googleAdSense: `ca-pub-1604121216663260`,
     copyright: `© YopiNoji. All Rights Reserved.`,
