@@ -78,7 +78,6 @@ cypress
 `cypress/integration` の内部には、後ほどテストコードを書いていきます。
 
 また、Cypress を npm scripts で即座に実行できるように、`package.json` に以下のようなスクリプトを追加しておきます。  
-これで `npm run cy:run` または `yarn cy:run` のコマンドで Cypress を実行できるようになります。
 
 ```json
 {
@@ -91,6 +90,9 @@ cypress
 
 ```
 
+これで `npm run cy:run` または `yarn cy:run` のコマンドで Cypress を実行できるようになります。
+
+また、`cypress.json` にテスト対象のローカル環境の URL を登録しておくと、`cy.visit('/path')`で任意のパスのテストを行うことができて便利です。
 
 
 ```json
@@ -100,7 +102,7 @@ cypress
 
 ```
 
-`cypress.json` にテスト対象のローカル環境の URL を登録しておくと、`cy.visit('/path')`で任意のパスのテストを行うことができて便利です。
+次に、試しに Cypress のテストを 1 件作成してみます。
 
 ```ts
 // enables intelligent code completion for Cypress commands
@@ -118,12 +120,16 @@ context('Actions', () => {
 })
 ```
 
-試しに上記のテストコードを `cypress/integration/spec.js` に追加してみます。
+試しに上記のテストコードを `cypress/integration/test.spec.js` に追加してみます。
 
 ![Default Create React App](./Default_Create_React_App.png)
 
 このテストケースでは、`http://localhost:3000` の a タグ の中に「Learn React」という文字が含まれていることをテストしています。  
 [Create React App](https://create-react-app.dev/) で作ったプロジェクトのデフォルト表示が正しいことをテストしています。
+
+Cypress では、他にも色々なメソッドを用いてテストを行うことができます。  
+詳しくは以下にあります。  
+https://docs.cypress.io/api/table-of-contents
 
 それでは早速テストしてみましょう。
 
