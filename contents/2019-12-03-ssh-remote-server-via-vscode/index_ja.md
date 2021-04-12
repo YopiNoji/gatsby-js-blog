@@ -31,7 +31,7 @@ Host example-com
     IdentityFile ~/.ssh/key.pem
 ```
 
-上記のコンフィグを作成することで、`ssh yopinoji-com`とコマンド入力するだけで定義した環境に SSH 接続できるようになります。
+上記のコンフィグを作成することで、ターミナルから `ssh example.com` とコマンド入力するだけで定義した環境に SSH 接続できるようになります。
 
 SSH 接続に問題が無いようであれば前準備は完了です。
 
