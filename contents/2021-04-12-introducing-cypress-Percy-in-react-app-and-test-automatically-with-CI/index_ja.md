@@ -1,9 +1,9 @@
 ---
 title: "React に Cypress & Percy を導入して CI で自動で E2E と画面差分のテストを行う"
-cover: "2021-04-10-introducing-cypress-Percy-in-react-app-and-test-automatically-with-CI/header.png"
+cover: "2021-04-12-introducing-cypress-Percy-in-react-app-and-test-automatically-with-CI/header.png"
 category: "Tech"
 lang: "ja"
-date: "2021-04-10"
+date: "2021-04-12"
 slug: "introducing-cypress-Percy-in-react-app-and-test-automatically-with-CI"
 tags:
   - GitHub
@@ -150,7 +150,8 @@ React を `localhost:3000` に立ち上げてから、Cypress を動かします
 さて、Cypress の導入は終わったものの、やはりプロジェクトが更新されるたびにバグやエラーがないことを自動で確認しておきたいですよね。  
 そのために CI/CD のワークフローの中で Cypress を動かしてみます。
 
-まず、
+まず、コマンド 1 つでテストを実行できるように `package.json` に npm scripts のコマンドを追加します。  
+以下のような形です。
 
 ```json
 {
@@ -163,11 +164,65 @@ React を `localhost:3000` に立ち上げてから、Cypress を動かします
 
 ```
 
-`cy:run-ci` という npm scripts を追加します。  
+今回は `cy:run-ci` という名称の npm scripts を `package.json` に追加しました。  
 このスクリプトを用いることで、`localhost:3000` に React が立ち上がるのを待ってから、Cypress を実行できるようになります。
 
-CI でのテストでは Cypress を実行するために基本的に Docker を用います。
+### GitHub Actions で Cypress を実行する
+
+CI/CD に GitHub Actions を使う場合、実行するワークフローを記述した `yml` ファイルを作成する必要があります。
+
+```
+name: Cypress Tests
+
+on: [push]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          start: yarn cy:run-ci
+
+```
+
+基本的には Git で Push されるたびに `yarn cy:run-ci` を実行しているだけのワークフローです。  
+これで Git での更新ごとに Cypress によるテストを実行して問題がないことを確認できますね。
+
+もし、以下のエラーになる場合、Cypress のテスト録画ファイルのパスがおかしいことになっています。
+
+```
+Error: ENOENT: no such file or directory, stat '/home/runner/work/react-cypress-percy-example/react-cypress-percy-example/cypress/videos/app.spec.js-compressed.mp4'
+
+
+Test run failed, code 1
+More information might be available above
+Cypress module has returned the following error message:
+Could not find Cypress test run results
+Error: Could not find Cypress test run results
+```
+
+Cypress のコンフィグで `videoUploadOnPasses` を無効化することでひとまず解決です。
+
+```
+{
+  "baseUrl": "http://localhost:3000",
+  "videoUploadOnPasses": false
+}
+```
+
+## Jenkins で Cypress を実行する
+
+環境によっては GitHub Actions を使えないこともあるので、その場合の例として Jenkins で Cypress を実行する方法についても軽く記載しておきます。
+
+CI で Cypress を実行するために基本的に Docker を用いると楽です。
 [Cypress 実行用の Docker イメージ](https://hub.docker.com/r/cypress/base)が配布されているのでそれを利用すると良いです。
+
+
+さて、Jenkins で Cypress を実行するために、`Jenkinsfile` を書くと上記のようになります。
 
 ```
 node {
@@ -186,9 +241,9 @@ node {
 
 ```
 
-さて、それらを `Jenkinsfile` に落とし込むと上記のようになります。
 Cypress 用の Docker コンテナで Cypress を実行しています。
 
+あとはこのワークフローを Git の Push ごとに実行するだけです。
 
 ## Percy を使い Cypress による画面の変更差分をスナップショットとして取得する
 
