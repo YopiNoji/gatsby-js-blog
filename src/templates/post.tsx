@@ -70,7 +70,6 @@ export const pageQuery = graphql`
       frontmatter {
         category
         lang
-        cover
         date
         slug
         tags

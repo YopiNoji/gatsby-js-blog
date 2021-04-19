@@ -19,9 +19,11 @@ const Background: React.FC = ({ children }) => {
   }));
   const onScroll = () => {
     const position = scrollRatio();
-    setSpring({
-      transform: `translateY(${position}%) rotate(45deg)`,
-    });
+    setSpring
+      .update({
+        transform: `translateY(${position}%) rotate(45deg)`,
+      })
+      .start();
   };
   return (
     <>

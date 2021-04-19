@@ -30,7 +30,7 @@ const Index: React.VFC<PropsType> = (props) => {
         filterdPost = edge.node.frontmatter?.lang === "ja";
         break;
       default:
-        return edge.node.frontmatter?.lang === "en";
+        return edge.node.frontmatter?.lang === "ja";
     }
     return filterdPost;
   });
@@ -68,7 +68,6 @@ export const pageQuery = graphql`
           frontmatter {
             category
             lang
-            cover
             date
             slug
             tags

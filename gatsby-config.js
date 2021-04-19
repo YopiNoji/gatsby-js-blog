@@ -8,7 +8,7 @@ module.exports = {
     email: `yopinoji@gmail.com`,
     twitterId: ``,
     githubId: `YopiNoji`,
-    googleAdSense: `ca-pub-1604121216663260`,
+    googleAdSense: ``,
     copyright: `© YopiNoji. All Rights Reserved.`,
     lang: `ja`,
     charSet: `utf-8`
@@ -160,7 +160,6 @@ module.exports = {
                       frontmatter {
                         slug
                         category
-                        cover
                         date
                         tags
                         title

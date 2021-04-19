@@ -17,7 +17,7 @@ const ScrollBarY: React.VFC = () => {
   const [springProps, setSpring] = useSpring(() => ({ height: `1%` }));
   const onScroll = () => {
     const position = scrollRatio();
-    setSpring({ height: `${position}%` });
+    setSpring.update({ height: `${position}%` }).start();
   };
   return (
     <animated.div
