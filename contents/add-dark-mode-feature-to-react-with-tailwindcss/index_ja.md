@@ -1,7 +1,6 @@
 ---
 title: "React と Tailwind CSS だけを使ってダークモードに対応する"
 
-
 category: "Tech"
 lang: "ja"
 date: "2020-12-16"

@@ -1,7 +1,6 @@
 ---
 title: "VSCode でリモートサーバに SSH 接続して直接コード編集するためのプラグインの紹介"
 
-
 category: "Tech"
 lang: "ja"
 date: "2019-12-03"

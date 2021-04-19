@@ -1,7 +1,6 @@
 ---
 title: "Auth0 による認証機能を備えた Hasura GraphQL サーバーを Nuxt.js 用に構築する"
 
-
 category: "Tech"
 lang: "ja"
 date: "2020-06-03"

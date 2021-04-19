@@ -1,6 +1,6 @@
 ---
 title: "React に Cypress & Percy を導入して CI で自動で E2E と画面差分のテストを行う"
-
+cover: "2021-04-12-introducing-cypress-percy-in-react-app-and-test-automatically-with-ci/header.png"
 category: "Tech"
 lang: "ja"
 date: "2021-04-12"

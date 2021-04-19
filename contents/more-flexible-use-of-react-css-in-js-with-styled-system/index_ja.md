@@ -1,7 +1,6 @@
 ---
 title: "React の CSS-in-JS でより柔軟にスタイルを拡張するためのライブラリ Styled System の紹介"
 
-
 category: "Tech"
 lang: "ja"
 date: "2020-10-14"

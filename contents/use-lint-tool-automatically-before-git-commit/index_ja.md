@@ -1,7 +1,6 @@
 ---
 title: "Git Commit を検知して ESLint や Prettier を自動で走らせてコードの品質を保つ方法"
 
-
 category: "Tech"
 lang: "ja"
 date: "2020-05-10"

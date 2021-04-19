@@ -1,7 +1,6 @@
 ---
 title: "Hasura を使って爆速で GraphQL サーバーを立てる with Nuxt.js"
 
-
 category: "Tech"
 lang: "ja"
 date: "2020-04-30"

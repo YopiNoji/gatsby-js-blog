@@ -1,7 +1,6 @@
 ---
 title: "Netlify と Gatsby の構成でブログを作るなら差分ビルド（Incremental Builds）のプラグインを使うべき"
 
-
 category: "Tech"
 lang: "ja"
 date: "2020-06-10"

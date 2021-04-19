@@ -1,7 +1,6 @@
 ---
 title: "Gatsby で作ったサイトを Netlify で公開する"
 
-
 category: "Tech"
 lang: "ja"
 date: "2019-09-14"

@@ -1,7 +1,6 @@
 ---
 title: "Deploying automatically a Nuxt.js static site to Firebase with GitHub Actions"
 
-
 category: "Tech"
 lang: "en"
 date: "2020-05-27"

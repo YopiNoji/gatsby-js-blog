@@ -1,7 +1,6 @@
 ---
 title: "クライアントサイドの JavaScript (Vue.js) で PDF を出力する方法"
 
-
 category: "Tech"
 lang: "ja"
 date: "2019-12-27"

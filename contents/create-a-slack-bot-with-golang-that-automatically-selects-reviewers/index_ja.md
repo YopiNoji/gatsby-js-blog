@@ -1,7 +1,6 @@
 ---
 title: "自動的にレビュアーを選んでくれる Slack Bot を Go 言語で作成した話"
 
-
 category: "Tech"
 lang: "ja"
 date: "2020-11-06"

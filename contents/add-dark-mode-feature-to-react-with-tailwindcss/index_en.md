@@ -1,7 +1,6 @@
 ---
 title: "Support dark mode using React and Tailwind CSS"
 
-
 category: "Tech"
 lang: "en"
 date: "2020-12-16"

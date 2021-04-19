@@ -1,7 +1,6 @@
 ---
 title: "GitHub Actionsを使って、プルリクエストごとにビルドが成功するかどうかを確認する"
 
-
 category: "Tech"
 lang: "ja"
 date: "2020-12-28"

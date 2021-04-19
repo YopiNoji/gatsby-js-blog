@@ -1,7 +1,6 @@
 ---
 title: "WhiteSource Renovate を使って GitHub リポジトリ内のライブラリのバージョンを自動的に更新する"
 
-
 category: "Tech"
 lang: "ja"
 date: "2021-01-07"

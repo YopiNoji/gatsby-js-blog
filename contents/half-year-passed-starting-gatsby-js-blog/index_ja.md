@@ -1,7 +1,6 @@
 ---
 title: "Gatsby で技術ブログを作ってから半年が過ぎた"
 
-
 category: "Poem"
 lang: "ja"
 date: "2020-03-09"

@@ -1,7 +1,6 @@
 ---
 title: "プログラムの仕様を伝えるための図を Web で描きたいときは draw.io がおすすめ"
 
-
 category: "Tech"
 lang: "ja"
 date: "2019-10-06"

@@ -1,7 +1,6 @@
 ---
 title: "Hasura で AWSの EC2 / RDS を用いて GraphQL サーバーを立てる"
 
-
 category: "Tech"
 lang: "ja"
 date: "2020-05-09"

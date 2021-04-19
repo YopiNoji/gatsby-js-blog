@@ -1,7 +1,6 @@
 ---
 title: "Detect Git commands and automatically run ESLint and Prettier to maintain code quality"
 
-
 category: "Tech"
 lang: "en"
 date: "2020-05-10"

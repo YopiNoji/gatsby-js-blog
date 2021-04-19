@@ -1,7 +1,6 @@
 ---
 title: "Homebrew を使わずに MacOS に Git をインストールする方法とその問題点"
 
-
 category: "Tech"
 lang: "ja"
 date: "2020-01-02"

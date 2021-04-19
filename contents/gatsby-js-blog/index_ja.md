@@ -1,7 +1,6 @@
 ---
 title: "Gatsby を使ってブログを作ってみた"
 
-
 category: "Tech"
 lang: "ja"
 date: "2019-09-09"

@@ -1,6 +1,6 @@
 ---
 title: "GitHub Actions で Markdown で書いた職務経歴書を PDF として自動で生成する"
-
+cover: "2020-07-28-github-actions-automatically-generate-pdf-of-resume-written-in-markdown/header.png"
 category: "Tech"
 lang: "ja"
 date: "2020-07-28"

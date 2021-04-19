@@ -1,7 +1,6 @@
 ---
 title: "React で作ったサイトの本番環境としての Docker コンテナとそのバンドルサイズ削減のお話"
 
-
 category: "Tech"
 lang: "ja"
 date: "2020-11-02"

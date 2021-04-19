@@ -1,7 +1,6 @@
 ---
 title: "2020 年の振り返り"
 
-
 category: "Poem"
 lang: "ja"
 date: "2020-12-29"

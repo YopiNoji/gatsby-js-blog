@@ -1,7 +1,6 @@
 ---
 title: "React Library Comparison for Implementing Parallax Effect Animation"
 
-
 category: "Tech"
 lang: "en"
 date: "2020-12-08"

@@ -1,7 +1,6 @@
 ---
 title: "ブログ用のおしゃれなヘッダー画像を簡単に作るなら Canva がおすすめ"
 
-
 category: "Tech"
 lang: "ja"
 date: "2019-10-05"

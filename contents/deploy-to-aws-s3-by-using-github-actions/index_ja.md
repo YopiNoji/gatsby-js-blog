@@ -1,7 +1,6 @@
 ---
 title: "GitHub Actions で ブランチ更新を検知して AWS S3 に自動でデプロイしてみる"
 
-
 category: "Tech"
 lang: "ja"
 date: "2020-04-04"

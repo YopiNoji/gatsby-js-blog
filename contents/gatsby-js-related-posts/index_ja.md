@@ -1,7 +1,6 @@
 ---
 title: "Gatsby で作成したブログに関連記事を表示する"
 
-
 category: "Tech"
 lang: "ja"
 date: "2019-12-12"

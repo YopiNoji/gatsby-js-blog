@@ -1,7 +1,6 @@
 ---
 title: "ブログの文章を textlint を使って自動で誤字脱字・表記揺れを校正する"
 
-
 category: "Tech"
 lang: "ja"
 date: "2020-06-09"

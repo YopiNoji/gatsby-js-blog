@@ -1,7 +1,6 @@
 ---
 title: "Use GitHub actions to check build is passed for each Pull Request"
 
-
 category: "Tech"
 lang: "en"
 date: "2020-12-28"

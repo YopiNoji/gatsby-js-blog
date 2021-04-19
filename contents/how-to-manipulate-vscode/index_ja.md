@@ -1,7 +1,6 @@
 ---
 title: "VSCode 操作ショートカットのカンニングペーパー（Mac 向け）"
 
-
 category: "Tech"
 lang: "ja"
 date: "2020-03-04"

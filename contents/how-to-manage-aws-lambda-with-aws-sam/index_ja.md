@@ -1,7 +1,6 @@
 ---
 title: "AWS SAM を使って AWS サーバレスアプリ（Lambda、DynamoDBなど） の Git 管理を実現する"
 
-
 category: "Tech"
 lang: "ja"
 date: "2020-02-12"

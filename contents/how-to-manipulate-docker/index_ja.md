@@ -1,7 +1,6 @@
 ---
 title: "Docker と Docker Compose の操作をまとめたカンニングペーパー"
 
-
 category: "Tech"
 lang: "ja"
 date: "2020-02-10"

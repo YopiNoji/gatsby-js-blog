@@ -1,7 +1,6 @@
 ---
 title: "GitHub Actions で Firebase に Nuxt.js 製の静的サイトを自動デプロイしてみる"
 
-
 category: "Tech"
 lang: "ja"
 date: "2020-05-27"

@@ -1,7 +1,6 @@
 ---
 title: "Nuxt.js のプロジェクトを Docker (Docker Compose) を使って動かす"
 
-
 category: "Tech"
 lang: "ja"
 date: "2020-01-08"

@@ -1,7 +1,6 @@
 ---
 title: "Firebase Functions を使って Nuxt.js 製のサイトにお問い合わせフォームを追加する"
 
-
 category: "Tech"
 lang: "ja"
 date: "2019-11-20"

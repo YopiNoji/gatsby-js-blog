@@ -1,7 +1,6 @@
 ---
 title: "GraphQL で一意の値を取得することで Gatsby ブログにタグ一覧を作る"
 
-
 category: "Tech"
 lang: "ja"
 date: "2019-09-19"

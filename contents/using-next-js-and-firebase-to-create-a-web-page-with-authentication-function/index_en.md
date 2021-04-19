@@ -1,7 +1,6 @@
 ---
 title: "Using Next.js and Firebase to create a web page with authentication at the speed of light"
 
-
 category: "Tech"
 lang: "en"
 date: "2021-01-06"

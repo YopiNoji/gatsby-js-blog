@@ -1,7 +1,6 @@
 ---
 title: "Vue.js でのモーダル呼び出しには Vuex ではなく、Portal-Vue を使うべき"
 
-
 category: "Tech"
 lang: "ja"
 date: "2020-06-20"

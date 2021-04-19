@@ -1,7 +1,6 @@
 ---
 title: "Expo CLI をグローバルインストールしないで React Native のプロジェクトを Expo で始めてみる"
 
-
 category: "Tech"
 lang: "ja"
 date: "2020-03-14"

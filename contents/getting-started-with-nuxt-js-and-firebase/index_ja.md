@@ -1,7 +1,6 @@
 ---
 title: "Nuxt.js と Firebase を使ってサクッとポートフォリオサイトを作ってみる"
 
-
 category: "Tech"
 lang: "ja"
 date: "2019-11-03"

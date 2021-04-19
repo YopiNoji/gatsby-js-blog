@@ -1,7 +1,6 @@
 ---
 title: "Using WhiteSource Renovate to automatically update the version of a library in a GitHub repository"
 
-
 category: "Tech"
 lang: "en"
 date: "2021-01-07"

@@ -1,7 +1,6 @@
 ---
 title: "ブログのホスティングサービスを Netlify から Vercel に移行した話"
 
-
 category: "Tech"
 lang: "ja"
 date: "2020-10-20"
