@@ -24,7 +24,7 @@
     "serve": "gatsby build && gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "storybook": "start-storybook -p 6006 --no-dll",
+    "lint-fix:static": "prettier --write \"**/*.{md,mdx,json}\"",
     "build-storybook": "build-storybook --no-dll"
   },
   "bugs": {

@@ -16,18 +16,20 @@ const calc = (x: number, y: number) =>
   }deg) rotateY(${(x - window.innerHeight / 2) / 20}deg) scale(1.1)`;
 
 const PostListing: React.FC<PropsType> = ({ data, ...props }) => {
-  const [springProps, setSpring] = useSpring(() => ({
+  const [springProps, spring] = useSpring(() => ({
     transform: `perspective(600px) rotateX(0deg) rotateY(0deg) scale(1)`,
     config: { mass: 10, tension: 550, friction: 140 },
   }));
 
   const onMouseMoveHandle = (e: { clientX: number; clientY: number }) =>
-    setSpring({ transform: calc(e.clientX, e.clientY) });
+    spring.update({ transform: calc(e.clientX, e.clientY) }).start();
 
   const onMouseLeaveHandle = () =>
-    setSpring({
-      transform: `perspective(600px) rotateX(0deg) rotateY(0deg) scale(1)`,
-    });
+    spring
+      .update({
+        transform: `perspective(600px) rotateX(0deg) rotateY(0deg) scale(1)`,
+      })
+      .start();
 
   const handleOnClick = React.useCallback((e) => {
     navigate("/" + e);

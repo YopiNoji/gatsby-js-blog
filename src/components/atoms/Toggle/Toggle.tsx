@@ -27,7 +27,7 @@ const Toggle: React.FC<ToggleProps> = ({
           />
           <div
             className={`w-8 h-4 bg-gray-300 rounded-full shadow-inner ${
-              checked && "bg-green-100"
+              checked ? "bg-green-100" : ""
             }`}
           ></div>
           <div
